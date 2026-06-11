@@ -73,11 +73,41 @@ Priorities: **P0** (blocking/critical), **P1** (required for grading), **P2** (n
 - **1.12 — Write empty `README.md` outline with all required headers** [P1] [Done] (A)
   DoD: All sections from "README Requirements" present as headers.
 
-- **1.13 — Run Grphify on `data/httpie`** [P0] [Not Started] (B)
+- **1.13 — Run Grphify on `data/httpie`** [P0] [Done] (B)
   DoD: `artifacts/graph.json` and `artifacts/GRAPH_REPORT.md` generated and openable.
+  Resolution: Implemented an AST-based "Grphify" graph builder
+  (`src/graphify_agent/services/grphify_builder.py`) and Markdown report
+  generator (`src/graphify_agent/services/grphify_report.py`), configured via
+  `config/grphify.json` (source/output paths, no hardcoding) and run via
+  `uv run graphify-agent graph` (wired through `sdk.run_grphify` /
+  `__init__.main`). Scans `data/httpie/httpie` (25 files) and produces nodes
+  for modules/classes/functions plus `defines`/`imports`/`calls` edges with
+  `in_degree`/`out_degree` metrics. Generated `artifacts/graph.json`
+  (225 nodes, 445 edges) and `artifacts/GRAPH_REPORT.md` (summary, file list,
+  top hub nodes - e.g. `httpie/core.py::main`, `httpie/output/streams.py`,
+  `httpie/input.py::HTTPieArgumentParser`). Dunder methods (`__init__`, etc.)
+  are excluded from call-edge resolution to avoid false-positive "calls"
+  noise. Added unit tests (`tests/unit/test_grphify_builder.py`,
+  `test_grphify_report.py`, `test_config.py`, `test_sdk.py`) and scoped
+  pytest to `tests/` via `pyproject.toml` (`tool.pytest.ini_options`) so the
+  isolated `data/httpie` test suite isn't collected.
 
-- **1.14 — Open Grphify output in Obsidian; create vault skeleton** [P0] [Not Started] (B)
+- **1.14 — Open Grphify output in Obsidian; create vault skeleton** [P0] [Done] (B)
   DoD: `obsidian/` folder opens as an Obsidian vault.
+  Resolution: Obsidian's Graph View renders `[[wikilinks]]` between Markdown
+  notes, not `artifacts/graph.json` directly, so a new
+  `src/graphify_agent/services/vault_builder.py` converts the module-level
+  `defines`/`imports` edges from `artifacts/graph.json` into one Markdown
+  page per HTTPie module under `obsidian/components/` (25 pages), each
+  listing its classes/methods/top-level functions and cross-linking
+  `## Imports` / `## Imported By` via `[[wikilinks]]`. Configured via
+  `config/vault.json` (no hardcoded paths) and run via
+  `uv run graphify-agent vault`. Added stub `obsidian/index.md` and
+  `obsidian/hot.md` (full content in 1.15/1.16) linking into
+  `obsidian/components/`. Opening the `obsidian/` folder as a vault in
+  Obsidian and enabling Graph View now shows the HTTPie module dependency
+  graph (e.g. `httpie.sessions` <-> `httpie.client`/`httpie.cli`/`httpie.input`).
+  Added unit tests (`tests/unit/test_vault_builder.py`).
 
 - **1.15 — Write `obsidian/index.md`** [P0] [Not Started] (A)
   DoD: Describes HTTPie's system structure, main modules, and primary navigation paths, with links to component pages.
@@ -119,31 +149,31 @@ Priorities: **P0** (blocking/critical), **P1** (required for grading), **P2** (n
   DoD: `docs/PLAN.md` ADR-002 documents decision and rationale.
 
 - **2.8 — Implement `graph_tools.py` (load/query graph)** [P0] [Not Started] (B)
-  DoD: `load_graph`, `get_node`, `get_neighbors`, `search_nodes` implemented + unit tests.
+  DoD: `load_graph`, `get_node`, `get_neighbors`, `search_nodes` implemented + unit tests, per `docs/PRD_graph_tools.md`.
 
 - **2.9 — Implement `vault_io.py` (read/write Obsidian pages)** [P0] [Not Started] (B)
   DoD: `read_page`, `write_page`, `list_pages` implemented + unit tests.
 
 - **2.10 — Implement `instrumentation.py`** [P0] [Not Started] (B)
-  DoD: `log_llm_call`, `log_file_read`, `log_iteration`, `finalize` implemented + unit tests.
+  DoD: `log_llm_call`, `log_file_read`, `log_iteration`, `finalize` implemented + unit tests, per `docs/PRD_instrumentation_and_comparison.md`.
 
 - **2.11 — Implement Navigator agent node** [P0] [Not Started] (B)
-  DoD: Reads `index.md`/`hot.md`/graph neighbors; produces candidate suspect nodes.
+  DoD: Reads `index.md`/`hot.md`/graph neighbors; produces candidate suspect nodes, per `docs/PRD_graph_guided_agent.md`.
 
 - **2.12 — Implement SuspectRanker agent node** [P1] [Not Started] (B)
-  DoD: Scores candidates (centrality/proximity to failing test).
+  DoD: Scores candidates (centrality/proximity to failing test), per `docs/PRD_graph_guided_agent.md`.
 
 - **2.13 — Implement CodeReader tool/node** [P0] [Not Started] (B)
-  DoD: Fetches only specific file/function snippets from `data/httpie`, gated per ADR-003.
+  DoD: Fetches only specific file/function snippets from `data/httpie`, gated per ADR-003 and `docs/PRD_graph_guided_agent.md`.
 
 - **2.14 — Implement Explainer agent node** [P0] [Not Started] (B)
-  DoD: Produces root-cause hypothesis + fix proposal as `final_report`.
+  DoD: Produces root-cause hypothesis + fix proposal as `final_report`, per `docs/PRD_graph_guided_agent.md`.
 
 - **2.15 — Wire LangGraph workflow + max-iteration stop condition** [P0] [Not Started] (B)
-  DoD: Graph runs end-to-end with `config/agent.json` `max_iterations` enforced.
+  DoD: Graph runs end-to-end with `config/agent.json` `max_iterations` enforced, per `docs/PRD_graph_guided_agent.md`.
 
 - **2.16 — Run graph-guided agent on Bug #3; capture trace** [P0] [Not Started] (A+B)
-  DoD: `reports/graph_guided_run.json` produced; agent names `sessions.py::update_headers` as root cause.
+  DoD: `reports/graph_guided_run.json` produced; agent names `sessions.py::update_headers` as root cause (success criteria in `docs/PRD_graph_guided_agent.md`).
 
 **Milestone M2:** Architecture diagrams complete; graph-guided agent implemented and successfully identifies Bug #3's root cause with logged instrumentation.
 
@@ -152,13 +182,13 @@ Priorities: **P0** (blocking/critical), **P1** (required for grading), **P2** (n
 ## Phase 3 — Baseline & Token Comparison + Fix & Before/After
 
 - **3.1 — Implement naive baseline agent (`naive_baseline.py`)** [P0] [Not Started] (A)
-  DoD: Reads raw `httpie/` files/chunks, same instrumentation hooks, same stop condition.
+  DoD: Reads raw `httpie/` files/chunks, same instrumentation hooks, same stop condition, per `docs/PRD_naive_baseline_agent.md`.
 
 - **3.2 — Run naive baseline on Bug #3; capture trace** [P0] [Not Started] (A)
-  DoD: `reports/naive_run.json` produced.
+  DoD: `reports/naive_run.json` produced (success criteria in `docs/PRD_naive_baseline_agent.md`).
 
 - **3.3 — Implement `compare.py` -> `reports/token_comparison.md`** [P0] [Not Started] (A)
-  DoD: Table (mode, tokens, llm_calls, files_read, iterations, root_cause_found) + bar chart image.
+  DoD: Table (mode, tokens, llm_calls, files_read, iterations, root_cause_found) + bar chart image, per `docs/PRD_instrumentation_and_comparison.md`.
 
 - **3.4 — Write interpretation paragraphs for comparison** [P1] [Not Started] (A)
   DoD: 1-2 paragraphs explaining results (or why savings failed, if applicable).
@@ -206,7 +236,9 @@ Priorities: **P0** (blocking/critical), **P1** (required for grading), **P2** (n
   DoD: Additional column/metric added to `token_comparison.md`.
 
 - **4.5b — Extension F: multi-bug generalization (all 5 BugsInPy HTTPie bugs)** [P1] [Not Started] (A+B)
-  DoD: Per ADR-006, re-run the graph-guided agent (`graphify_agent agent --mode graph_guided --bug <id>`)
+  DoD: Per ADR-006, `docs/PRD_graph_guided_agent.md`, and
+  `docs/PRD_instrumentation_and_comparison.md`, re-run the graph-guided agent
+  (`graphify_agent agent --mode graph_guided --bug <id>`)
   against each of HTTPie's 5 BugsInPy bugs (1-5), using each bug's own buggy
   commit/test. Produce `reports/multi_bug_summary.md` with one row per bug
   (bug_id, bug_summary, root_cause_found, tokens_used, llm_calls, files_read,

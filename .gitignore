@@ -25,3 +25,6 @@ htmlcov/
 
 # Notebooks checkpoints
 .ipynb_checkpoints/
+
+# Obsidian local config/workspace state
+obsidian/.obsidian/

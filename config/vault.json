@@ -1,0 +1,5 @@
+{
+  "graph_path": "artifacts/graph.json",
+  "vault_dir": "obsidian",
+  "components_dir": "obsidian/components"
+}

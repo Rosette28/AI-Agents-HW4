@@ -1,0 +1,5156 @@
+{
+  "nodes": [
+    {
+      "id": "httpie/__init__.py",
+      "type": "module",
+      "file": "httpie/__init__.py",
+      "lines": [
+        1,
+        19
+      ],
+      "metrics": {
+        "in_degree": 0,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/__main__.py",
+      "type": "module",
+      "file": "httpie/__main__.py",
+      "lines": [
+        1,
+        10
+      ],
+      "metrics": {
+        "in_degree": 0,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/cli.py",
+      "type": "module",
+      "file": "httpie/cli.py",
+      "lines": [
+        1,
+        573
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/client.py",
+      "type": "module",
+      "file": "httpie/client.py",
+      "lines": [
+        1,
+        147
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 7
+      }
+    },
+    {
+      "id": "httpie/compat.py",
+      "type": "module",
+      "file": "httpie/compat.py",
+      "lines": [
+        1,
+        173
+      ],
+      "metrics": {
+        "in_degree": 10,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/config.py",
+      "type": "module",
+      "file": "httpie/config.py",
+      "lines": [
+        1,
+        97
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/context.py",
+      "type": "module",
+      "file": "httpie/context.py",
+      "lines": [
+        1,
+        84
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/core.py",
+      "type": "module",
+      "file": "httpie/core.py",
+      "lines": [
+        1,
+        202
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 10
+      }
+    },
+    {
+      "id": "httpie/downloads.py",
+      "type": "module",
+      "file": "httpie/downloads.py",
+      "lines": [
+        1,
+        434
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 12
+      }
+    },
+    {
+      "id": "httpie/input.py",
+      "type": "module",
+      "file": "httpie/input.py",
+      "lines": [
+        1,
+        693
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 16
+      }
+    },
+    {
+      "id": "httpie/models.py",
+      "type": "module",
+      "file": "httpie/models.py",
+      "lines": [
+        1,
+        141
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/__init__.py",
+      "type": "module",
+      "file": "httpie/output/__init__.py",
+      "lines": [
+        1,
+        0
+      ],
+      "metrics": {
+        "in_degree": 0,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/__init__.py",
+      "type": "module",
+      "file": "httpie/output/formatters/__init__.py",
+      "lines": [
+        1,
+        0
+      ],
+      "metrics": {
+        "in_degree": 0,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py",
+      "type": "module",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        1,
+        215
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/formatters/headers.py",
+      "type": "module",
+      "file": "httpie/output/formatters/headers.py",
+      "lines": [
+        1,
+        14
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/formatters/json.py",
+      "type": "module",
+      "file": "httpie/output/formatters/json.py",
+      "lines": [
+        1,
+        26
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/formatters/xml.py",
+      "type": "module",
+      "file": "httpie/output/formatters/xml.py",
+      "lines": [
+        1,
+        61
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/output/processing.py",
+      "type": "module",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        1,
+        50
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/streams.py",
+      "type": "module",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        1,
+        293
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 15
+      }
+    },
+    {
+      "id": "httpie/plugins/__init__.py",
+      "type": "module",
+      "file": "httpie/plugins/__init__.py",
+      "lines": [
+        1,
+        24
+      ],
+      "metrics": {
+        "in_degree": 0,
+        "out_degree": 7
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py",
+      "type": "module",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        1,
+        92
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py",
+      "type": "module",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        1,
+        48
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py",
+      "type": "module",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        1,
+        65
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/sessions.py",
+      "type": "module",
+      "file": "httpie/sessions.py",
+      "lines": [
+        1,
+        152
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/utils.py",
+      "type": "module",
+      "file": "httpie/utils.py",
+      "lines": [
+        1,
+        56
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/__init__.py::ExitStatus",
+      "type": "class",
+      "file": "httpie/__init__.py",
+      "lines": [
+        10,
+        19
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/cli.py::HTTPieHelpFormatter",
+      "type": "class",
+      "file": "httpie/cli.py",
+      "lines": [
+        26,
+        42
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/cli.py::HTTPieHelpFormatter.__init__",
+      "type": "function",
+      "file": "httpie/cli.py",
+      "lines": [
+        35,
+        38
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/cli.py::HTTPieHelpFormatter._split_lines",
+      "type": "function",
+      "file": "httpie/cli.py",
+      "lines": [
+        40,
+        42
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/client.py::get_requests_session",
+      "type": "function",
+      "file": "httpie/client.py",
+      "lines": [
+        30,
+        36
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/client.py::get_response",
+      "type": "function",
+      "file": "httpie/client.py",
+      "lines": [
+        39,
+        58
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/client.py::dump_request",
+      "type": "function",
+      "file": "httpie/client.py",
+      "lines": [
+        61,
+        63
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/client.py::encode_headers",
+      "type": "function",
+      "file": "httpie/client.py",
+      "lines": [
+        66,
+        72
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/client.py::get_default_headers",
+      "type": "function",
+      "file": "httpie/client.py",
+      "lines": [
+        75,
+        91
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/client.py::get_requests_kwargs",
+      "type": "function",
+      "file": "httpie/client.py",
+      "lines": [
+        94,
+        147
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 6
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict",
+      "type": "class",
+      "file": "httpie/config.py",
+      "lines": [
+        16,
+        77
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 7
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict.__getattr__",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        22,
+        23
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict._get_path",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        25,
+        27
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict.path",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        30,
+        38
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict.is_new",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        40,
+        41
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict.load",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        43,
+        56
+      ],
+      "metrics": {
+        "in_degree": 5,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict.save",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        58,
+        70
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/config.py::BaseConfigDict.delete",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        72,
+        77
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/config.py::Config",
+      "type": "class",
+      "file": "httpie/config.py",
+      "lines": [
+        80,
+        97
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/config.py::Config.__init__",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        91,
+        94
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/config.py::Config._get_path",
+      "type": "function",
+      "file": "httpie/config.py",
+      "lines": [
+        96,
+        97
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/context.py::Environment",
+      "type": "class",
+      "file": "httpie/context.py",
+      "lines": [
+        7,
+        84
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/context.py::Environment.__init__",
+      "type": "function",
+      "file": "httpie/context.py",
+      "lines": [
+        53,
+        74
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/context.py::Environment.config",
+      "type": "function",
+      "file": "httpie/context.py",
+      "lines": [
+        77,
+        84
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/core.py::get_exit_status",
+      "type": "function",
+      "file": "httpie/core.py",
+      "lines": [
+        32,
+        44
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/core.py::print_debug_info",
+      "type": "function",
+      "file": "httpie/core.py",
+      "lines": [
+        47,
+        54
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/core.py::decode_args",
+      "type": "function",
+      "file": "httpie/core.py",
+      "lines": [
+        57,
+        67
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/core.py::main",
+      "type": "function",
+      "file": "httpie/core.py",
+      "lines": [
+        70,
+        202
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 21
+      }
+    },
+    {
+      "id": "httpie/downloads.py::ContentRangeError",
+      "type": "class",
+      "file": "httpie/downloads.py",
+      "lines": [
+        36,
+        37
+      ],
+      "metrics": {
+        "in_degree": 5,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::parse_content_range",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        40,
+        96
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/downloads.py::filename_from_content_disposition",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        99,
+        115
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::filename_from_url",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        118,
+        135
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::get_unique_filename",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        138,
+        144
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download",
+      "type": "class",
+      "file": "httpie/downloads.py",
+      "lines": [
+        147,
+        287
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 7
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download.__init__",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        149,
+        171
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download.pre_request",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        173,
+        189
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download.start",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        191,
+        260
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 9
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download.finish",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        262,
+        265
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download.failed",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        267,
+        268
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download.interrupted",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        271,
+        276
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Download.chunk_downloaded",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        278,
+        287
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Status",
+      "type": "class",
+      "file": "httpie/downloads.py",
+      "lines": [
+        290,
+        318
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Status.__init__",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        293,
+        298
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Status.started",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        300,
+        305
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Status.chunk_downloaded",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        307,
+        309
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Status.has_finished",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        312,
+        313
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::Status.finished",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        315,
+        318
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::ProgressReporterThread",
+      "type": "class",
+      "file": "httpie/downloads.py",
+      "lines": [
+        321,
+        434
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/downloads.py::ProgressReporterThread.__init__",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        328,
+        343
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::ProgressReporterThread.stop",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        345,
+        347
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/downloads.py::ProgressReporterThread.run",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        349,
+        356
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        358,
+        410
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "type": "function",
+      "file": "httpie/downloads.py",
+      "lines": [
+        412,
+        434
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        106,
+        391
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 13
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser.__init__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        114,
+        116
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        119,
+        155
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 10
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._print_message",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        158,
+        167
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._setup_standard_streams",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        169,
+        202
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._apply_config",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        204,
+        207
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._process_auth",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        209,
+        234
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._apply_no_options",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        236,
+        260
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._body_from_file",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        262,
+        271
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._guess_method",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        273,
+        309
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._parse_items",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        311,
+        347
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._process_output_options",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        349,
+        372
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._process_pretty_options",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        374,
+        383
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::HTTPieArgumentParser._validate_download_options",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        385,
+        391
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::ParseError",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        394,
+        395
+      ],
+      "metrics": {
+        "in_degree": 5,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::KeyValue",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        398,
+        411
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/input.py::KeyValue.__init__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        401,
+        405
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::KeyValue.__eq__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        407,
+        408
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::KeyValue.__repr__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        410,
+        411
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::SessionNameValidator",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        414,
+        424
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/input.py::SessionNameValidator.__init__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        416,
+        417
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::SessionNameValidator.__call__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        419,
+        424
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::KeyValueArgType",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        427,
+        514
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/input.py::KeyValueArgType.__init__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        437,
+        441
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::KeyValueArgType.__call__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        443,
+        514
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::AuthCredentials",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        517,
+        533
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/input.py::AuthCredentials._getpass",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        520,
+        522
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::AuthCredentials.has_password",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        524,
+        525
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::AuthCredentials.prompt_password",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        527,
+        533
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/input.py::AuthCredentialsArgType",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        536,
+        556
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/input.py::AuthCredentialsArgType.__call__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        541,
+        556
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::RequestItemsDict",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        559,
+        588
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/input.py::RequestItemsDict.__setitem__",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        574,
+        588
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::ParamsDict",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        591,
+        592
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::DataDict",
+      "type": "class",
+      "file": "httpie/input.py",
+      "lines": [
+        595,
+        602
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/input.py::DataDict.items",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        597,
+        602
+      ],
+      "metrics": {
+        "in_degree": 5,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::get_content_type",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        609,
+        621
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/input.py::parse_items",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        624,
+        685
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 6
+      }
+    },
+    {
+      "id": "httpie/input.py::readable_file_arg",
+      "type": "function",
+      "file": "httpie/input.py",
+      "lines": [
+        688,
+        693
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage",
+      "type": "class",
+      "file": "httpie/models.py",
+      "lines": [
+        4,
+        39
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 7
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage.__init__",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        7,
+        8
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage.iter_body",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        10,
+        12
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage.iter_lines",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        14,
+        16
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage.headers",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        19,
+        21
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage.encoding",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        24,
+        26
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage.body",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        29,
+        31
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPMessage.content_type",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        34,
+        39
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPResponse",
+      "type": "class",
+      "file": "httpie/models.py",
+      "lines": [
+        42,
+        89
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPResponse.iter_body",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        45,
+        46
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPResponse.iter_lines",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        48,
+        49
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPResponse.headers",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        53,
+        79
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPResponse.encoding",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        82,
+        83
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPResponse.body",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        86,
+        89
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPRequest",
+      "type": "class",
+      "file": "httpie/models.py",
+      "lines": [
+        92,
+        141
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPRequest.iter_body",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        95,
+        96
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPRequest.iter_lines",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        98,
+        99
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPRequest.headers",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        102,
+        129
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPRequest.encoding",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        132,
+        133
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/models.py::HTTPRequest.body",
+      "type": "function",
+      "file": "httpie/models.py",
+      "lines": [
+        136,
+        141
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::ColorFormatter",
+      "type": "class",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        20,
+        63
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::ColorFormatter.__init__",
+      "type": "function",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        30,
+        48
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::ColorFormatter.format_headers",
+      "type": "function",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        50,
+        51
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::ColorFormatter.format_body",
+      "type": "function",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        53,
+        57
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::ColorFormatter.get_lexer",
+      "type": "function",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        59,
+        63
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::get_lexer",
+      "type": "function",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        66,
+        95
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::HTTPLexer",
+      "type": "class",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        98,
+        143
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/colors.py::Solarized256Style",
+      "type": "class",
+      "file": "httpie/output/formatters/colors.py",
+      "lines": [
+        146,
+        215
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/headers.py::HeadersFormatter",
+      "type": "class",
+      "file": "httpie/output/formatters/headers.py",
+      "lines": [
+        4,
+        14
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/formatters/headers.py::HeadersFormatter.format_headers",
+      "type": "function",
+      "file": "httpie/output/formatters/headers.py",
+      "lines": [
+        6,
+        14
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/json.py::JSONFormatter",
+      "type": "class",
+      "file": "httpie/output/formatters/json.py",
+      "lines": [
+        10,
+        26
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/formatters/json.py::JSONFormatter.format_body",
+      "type": "function",
+      "file": "httpie/output/formatters/json.py",
+      "lines": [
+        12,
+        26
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/xml.py::indent",
+      "type": "function",
+      "file": "httpie/output/formatters/xml.py",
+      "lines": [
+        15,
+        36
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/formatters/xml.py::XMLFormatter",
+      "type": "class",
+      "file": "httpie/output/formatters/xml.py",
+      "lines": [
+        39,
+        61
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/formatters/xml.py::XMLFormatter.format_body",
+      "type": "function",
+      "file": "httpie/output/formatters/xml.py",
+      "lines": [
+        42,
+        61
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/processing.py::is_valid_mime",
+      "type": "function",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        10,
+        11
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/processing.py::Conversion",
+      "type": "class",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        14,
+        20
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/processing.py::Conversion.get_converter",
+      "type": "function",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        16,
+        20
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/output/processing.py::Formatting",
+      "type": "class",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        23,
+        50
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/output/processing.py::Formatting.__init__",
+      "type": "function",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        26,
+        39
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/output/processing.py::Formatting.format_headers",
+      "type": "function",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        41,
+        44
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/output/processing.py::Formatting.format_body",
+      "type": "function",
+      "file": "httpie/output/processing.py",
+      "lines": [
+        46,
+        50
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BinarySuppressedError",
+      "type": "class",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        20,
+        24
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::write",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        27,
+        38
+      ],
+      "metrics": {
+        "in_degree": 16,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::write_with_colors_win_py3",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        41,
+        55
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::build_output_stream",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        58,
+        94
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::get_stream_type",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        97,
+        121
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BaseStream",
+      "type": "class",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        124,
+        164
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BaseStream.__init__",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        127,
+        139
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BaseStream.get_headers",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        141,
+        143
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BaseStream.iter_body",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        145,
+        147
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BaseStream.__iter__",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        149,
+        164
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 10
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::RawStream",
+      "type": "class",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        167,
+        178
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::RawStream.__init__",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        173,
+        175
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::RawStream.iter_body",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        177,
+        178
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 7
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::EncodedStream",
+      "type": "class",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        181,
+        213
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::EncodedStream.__init__",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        191,
+        203
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::EncodedStream.iter_body",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        205,
+        213
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::PrettyStream",
+      "type": "class",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        216,
+        264
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::PrettyStream.__init__",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        227,
+        231
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::PrettyStream.get_headers",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        233,
+        235
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::PrettyStream.iter_body",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        237,
+        256
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 8
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::PrettyStream.process_body",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        258,
+        264
+      ],
+      "metrics": {
+        "in_degree": 4,
+        "out_degree": 5
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BufferedPrettyStream",
+      "type": "class",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        267,
+        293
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "type": "function",
+      "file": "httpie/output/streams.py",
+      "lines": [
+        277,
+        293
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 11
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::BasePlugin",
+      "type": "class",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        1,
+        11
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::AuthPlugin",
+      "type": "class",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        14,
+        30
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::AuthPlugin.get_auth",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        25,
+        30
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::TransportPlugin",
+      "type": "class",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        33,
+        49
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::TransportPlugin.get_adapter",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        43,
+        49
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::ConverterPlugin",
+      "type": "class",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        52,
+        62
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::ConverterPlugin.__init__",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        54,
+        55
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::ConverterPlugin.convert",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        57,
+        58
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::ConverterPlugin.supports",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        61,
+        62
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::FormatterPlugin",
+      "type": "class",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        65,
+        92
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::FormatterPlugin.__init__",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        67,
+        75
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::FormatterPlugin.format_headers",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        77,
+        83
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/base.py::FormatterPlugin.format_body",
+      "type": "function",
+      "file": "httpie/plugins/base.py",
+      "lines": [
+        85,
+        92
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::BuiltinAuthPlugin",
+      "type": "class",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        8,
+        10
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::HTTPBasicAuth",
+      "type": "class",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        13,
+        30
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 2
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::HTTPBasicAuth.__call__",
+      "type": "function",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        15,
+        24
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::HTTPBasicAuth.make_header",
+      "type": "function",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        27,
+        30
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::BasicAuthPlugin",
+      "type": "class",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        33,
+        39
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::BasicAuthPlugin.get_auth",
+      "type": "function",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        38,
+        39
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::DigestAuthPlugin",
+      "type": "class",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        42,
+        48
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/builtin.py::DigestAuthPlugin.get_auth",
+      "type": "function",
+      "file": "httpie/plugins/builtin.py",
+      "lines": [
+        47,
+        48
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager",
+      "type": "class",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        15,
+        65
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 11
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.__init__",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        17,
+        18
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.__iter__",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        20,
+        21
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.register",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        23,
+        25
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.load_installed_plugins",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        27,
+        32
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 3
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.get_auth_plugins",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        35,
+        36
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.get_auth_plugin_mapping",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        38,
+        40
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.get_auth_plugin",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        42,
+        43
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.get_formatters",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        46,
+        48
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.get_formatters_grouped",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        50,
+        56
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.get_converters",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        58,
+        60
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/plugins/manager.py::PluginManager.get_transport_plugins",
+      "type": "function",
+      "file": "httpie/plugins/manager.py",
+      "lines": [
+        63,
+        65
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/sessions.py::get_response",
+      "type": "function",
+      "file": "httpie/sessions.py",
+      "lines": [
+        23,
+        74
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 7
+      }
+    },
+    {
+      "id": "httpie/sessions.py::Session",
+      "type": "class",
+      "file": "httpie/sessions.py",
+      "lines": [
+        77,
+        152
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 8
+      }
+    },
+    {
+      "id": "httpie/sessions.py::Session.__init__",
+      "type": "function",
+      "file": "httpie/sessions.py",
+      "lines": [
+        81,
+        90
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/sessions.py::Session._get_path",
+      "type": "function",
+      "file": "httpie/sessions.py",
+      "lines": [
+        92,
+        93
+      ],
+      "metrics": {
+        "in_degree": 3,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/sessions.py::Session.update_headers",
+      "type": "function",
+      "file": "httpie/sessions.py",
+      "lines": [
+        95,
+        112
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/sessions.py::Session.headers",
+      "type": "function",
+      "file": "httpie/sessions.py",
+      "lines": [
+        115,
+        116
+      ],
+      "metrics": {
+        "in_degree": 1,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/sessions.py::Session.cookies",
+      "type": "function",
+      "file": "httpie/sessions.py",
+      "lines": [
+        128,
+        139
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 1
+      }
+    },
+    {
+      "id": "httpie/sessions.py::Session.auth",
+      "type": "function",
+      "file": "httpie/sessions.py",
+      "lines": [
+        150,
+        152
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 4
+      }
+    },
+    {
+      "id": "httpie/utils.py::load_json_preserve_order",
+      "type": "function",
+      "file": "httpie/utils.py",
+      "lines": [
+        7,
+        10
+      ],
+      "metrics": {
+        "in_degree": 2,
+        "out_degree": 0
+      }
+    },
+    {
+      "id": "httpie/utils.py::humanize_bytes",
+      "type": "function",
+      "file": "httpie/utils.py",
+      "lines": [
+        13,
+        56
+      ],
+      "metrics": {
+        "in_degree": 9,
+        "out_degree": 0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "httpie/__init__.py",
+      "target": "httpie/__init__.py::ExitStatus",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/cli.py",
+      "target": "httpie/cli.py::HTTPieHelpFormatter",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/cli.py::HTTPieHelpFormatter",
+      "target": "httpie/cli.py::HTTPieHelpFormatter.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/cli.py::HTTPieHelpFormatter",
+      "target": "httpie/cli.py::HTTPieHelpFormatter._split_lines",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/client.py",
+      "target": "httpie/client.py::get_requests_session",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/client.py",
+      "target": "httpie/client.py::get_response",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/client.py",
+      "target": "httpie/client.py::dump_request",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/client.py",
+      "target": "httpie/client.py::encode_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/client.py",
+      "target": "httpie/client.py::get_default_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/client.py",
+      "target": "httpie/client.py::get_requests_kwargs",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py",
+      "target": "httpie/config.py::BaseConfigDict",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict",
+      "target": "httpie/config.py::BaseConfigDict.__getattr__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict",
+      "target": "httpie/config.py::BaseConfigDict._get_path",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict",
+      "target": "httpie/config.py::BaseConfigDict.path",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict",
+      "target": "httpie/config.py::BaseConfigDict.is_new",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict",
+      "target": "httpie/config.py::BaseConfigDict.load",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict",
+      "target": "httpie/config.py::BaseConfigDict.save",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict",
+      "target": "httpie/config.py::BaseConfigDict.delete",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py",
+      "target": "httpie/config.py::Config",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::Config",
+      "target": "httpie/config.py::Config.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/config.py::Config",
+      "target": "httpie/config.py::Config._get_path",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/context.py",
+      "target": "httpie/context.py::Environment",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/context.py::Environment",
+      "target": "httpie/context.py::Environment.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/context.py::Environment",
+      "target": "httpie/context.py::Environment.config",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/core.py::get_exit_status",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/core.py::print_debug_info",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/core.py::decode_args",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/core.py::main",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::ContentRangeError",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::parse_content_range",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::filename_from_content_disposition",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::filename_from_url",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::get_unique_filename",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::Download",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Download",
+      "target": "httpie/downloads.py::Download.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Download",
+      "target": "httpie/downloads.py::Download.pre_request",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Download",
+      "target": "httpie/downloads.py::Download.start",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Download",
+      "target": "httpie/downloads.py::Download.finish",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Download",
+      "target": "httpie/downloads.py::Download.failed",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Download",
+      "target": "httpie/downloads.py::Download.interrupted",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Download",
+      "target": "httpie/downloads.py::Download.chunk_downloaded",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::Status",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Status",
+      "target": "httpie/downloads.py::Status.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Status",
+      "target": "httpie/downloads.py::Status.started",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Status",
+      "target": "httpie/downloads.py::Status.chunk_downloaded",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Status",
+      "target": "httpie/downloads.py::Status.has_finished",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::Status",
+      "target": "httpie/downloads.py::Status.finished",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/downloads.py::ProgressReporterThread",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread",
+      "target": "httpie/downloads.py::ProgressReporterThread.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread",
+      "target": "httpie/downloads.py::ProgressReporterThread.stop",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread",
+      "target": "httpie/downloads.py::ProgressReporterThread.run",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread",
+      "target": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread",
+      "target": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::HTTPieArgumentParser",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._print_message",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._setup_standard_streams",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._apply_config",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._process_auth",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._apply_no_options",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._body_from_file",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._guess_method",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._parse_items",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._process_output_options",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._process_pretty_options",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser",
+      "target": "httpie/input.py::HTTPieArgumentParser._validate_download_options",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::ParseError",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::KeyValue",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::KeyValue",
+      "target": "httpie/input.py::KeyValue.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::KeyValue",
+      "target": "httpie/input.py::KeyValue.__eq__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::KeyValue",
+      "target": "httpie/input.py::KeyValue.__repr__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::SessionNameValidator",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::SessionNameValidator",
+      "target": "httpie/input.py::SessionNameValidator.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::SessionNameValidator",
+      "target": "httpie/input.py::SessionNameValidator.__call__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::KeyValueArgType",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::KeyValueArgType",
+      "target": "httpie/input.py::KeyValueArgType.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::KeyValueArgType",
+      "target": "httpie/input.py::KeyValueArgType.__call__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::AuthCredentials",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::AuthCredentials",
+      "target": "httpie/input.py::AuthCredentials._getpass",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::AuthCredentials",
+      "target": "httpie/input.py::AuthCredentials.has_password",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::AuthCredentials",
+      "target": "httpie/input.py::AuthCredentials.prompt_password",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::AuthCredentialsArgType",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::AuthCredentialsArgType",
+      "target": "httpie/input.py::AuthCredentialsArgType.__call__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::RequestItemsDict",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::RequestItemsDict",
+      "target": "httpie/input.py::RequestItemsDict.__setitem__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::ParamsDict",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::DataDict",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py::DataDict",
+      "target": "httpie/input.py::DataDict.items",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::get_content_type",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::parse_items",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/input.py::readable_file_arg",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py",
+      "target": "httpie/models.py::HTTPMessage",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPMessage",
+      "target": "httpie/models.py::HTTPMessage.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPMessage",
+      "target": "httpie/models.py::HTTPMessage.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPMessage",
+      "target": "httpie/models.py::HTTPMessage.iter_lines",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPMessage",
+      "target": "httpie/models.py::HTTPMessage.headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPMessage",
+      "target": "httpie/models.py::HTTPMessage.encoding",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPMessage",
+      "target": "httpie/models.py::HTTPMessage.body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPMessage",
+      "target": "httpie/models.py::HTTPMessage.content_type",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py",
+      "target": "httpie/models.py::HTTPResponse",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPResponse",
+      "target": "httpie/models.py::HTTPResponse.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPResponse",
+      "target": "httpie/models.py::HTTPResponse.iter_lines",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPResponse",
+      "target": "httpie/models.py::HTTPResponse.headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPResponse",
+      "target": "httpie/models.py::HTTPResponse.encoding",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPResponse",
+      "target": "httpie/models.py::HTTPResponse.body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py",
+      "target": "httpie/models.py::HTTPRequest",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPRequest",
+      "target": "httpie/models.py::HTTPRequest.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPRequest",
+      "target": "httpie/models.py::HTTPRequest.iter_lines",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPRequest",
+      "target": "httpie/models.py::HTTPRequest.headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPRequest",
+      "target": "httpie/models.py::HTTPRequest.encoding",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/models.py::HTTPRequest",
+      "target": "httpie/models.py::HTTPRequest.body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.format_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.format_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.get_lexer",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py",
+      "target": "httpie/output/formatters/colors.py::get_lexer",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py",
+      "target": "httpie/output/formatters/colors.py::HTTPLexer",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py",
+      "target": "httpie/output/formatters/colors.py::Solarized256Style",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/headers.py",
+      "target": "httpie/output/formatters/headers.py::HeadersFormatter",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/headers.py::HeadersFormatter",
+      "target": "httpie/output/formatters/headers.py::HeadersFormatter.format_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/json.py",
+      "target": "httpie/output/formatters/json.py::JSONFormatter",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/json.py::JSONFormatter",
+      "target": "httpie/output/formatters/json.py::JSONFormatter.format_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/xml.py",
+      "target": "httpie/output/formatters/xml.py::indent",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/xml.py",
+      "target": "httpie/output/formatters/xml.py::XMLFormatter",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/formatters/xml.py::XMLFormatter",
+      "target": "httpie/output/formatters/xml.py::XMLFormatter.format_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/processing.py",
+      "target": "httpie/output/processing.py::is_valid_mime",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/processing.py",
+      "target": "httpie/output/processing.py::Conversion",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/processing.py::Conversion",
+      "target": "httpie/output/processing.py::Conversion.get_converter",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/processing.py",
+      "target": "httpie/output/processing.py::Formatting",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting",
+      "target": "httpie/output/processing.py::Formatting.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting",
+      "target": "httpie/output/processing.py::Formatting.format_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting",
+      "target": "httpie/output/processing.py::Formatting.format_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::BinarySuppressedError",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::write",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::write_with_colors_win_py3",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::build_output_stream",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::get_stream_type",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::BaseStream",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream",
+      "target": "httpie/output/streams.py::BaseStream.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream",
+      "target": "httpie/output/streams.py::BaseStream.get_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream",
+      "target": "httpie/output/streams.py::BaseStream.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream",
+      "target": "httpie/output/streams.py::BaseStream.__iter__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::RawStream",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream",
+      "target": "httpie/output/streams.py::RawStream.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream",
+      "target": "httpie/output/streams.py::RawStream.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::EncodedStream",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::EncodedStream",
+      "target": "httpie/output/streams.py::EncodedStream.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::EncodedStream",
+      "target": "httpie/output/streams.py::EncodedStream.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::PrettyStream",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream",
+      "target": "httpie/output/streams.py::PrettyStream.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream",
+      "target": "httpie/output/streams.py::PrettyStream.get_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream",
+      "target": "httpie/output/streams.py::PrettyStream.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream",
+      "target": "httpie/output/streams.py::PrettyStream.process_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/streams.py::BufferedPrettyStream",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream",
+      "target": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py",
+      "target": "httpie/plugins/base.py::BasePlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py",
+      "target": "httpie/plugins/base.py::AuthPlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::AuthPlugin",
+      "target": "httpie/plugins/base.py::AuthPlugin.get_auth",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py",
+      "target": "httpie/plugins/base.py::TransportPlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::TransportPlugin",
+      "target": "httpie/plugins/base.py::TransportPlugin.get_adapter",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py",
+      "target": "httpie/plugins/base.py::ConverterPlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::ConverterPlugin",
+      "target": "httpie/plugins/base.py::ConverterPlugin.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::ConverterPlugin",
+      "target": "httpie/plugins/base.py::ConverterPlugin.convert",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::ConverterPlugin",
+      "target": "httpie/plugins/base.py::ConverterPlugin.supports",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py",
+      "target": "httpie/plugins/base.py::FormatterPlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::FormatterPlugin",
+      "target": "httpie/plugins/base.py::FormatterPlugin.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::FormatterPlugin",
+      "target": "httpie/plugins/base.py::FormatterPlugin.format_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/base.py::FormatterPlugin",
+      "target": "httpie/plugins/base.py::FormatterPlugin.format_body",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py",
+      "target": "httpie/plugins/builtin.py::BuiltinAuthPlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py",
+      "target": "httpie/plugins/builtin.py::HTTPBasicAuth",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py::HTTPBasicAuth",
+      "target": "httpie/plugins/builtin.py::HTTPBasicAuth.__call__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py::HTTPBasicAuth",
+      "target": "httpie/plugins/builtin.py::HTTPBasicAuth.make_header",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py",
+      "target": "httpie/plugins/builtin.py::BasicAuthPlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py::BasicAuthPlugin",
+      "target": "httpie/plugins/builtin.py::BasicAuthPlugin.get_auth",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py",
+      "target": "httpie/plugins/builtin.py::DigestAuthPlugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/builtin.py::DigestAuthPlugin",
+      "target": "httpie/plugins/builtin.py::DigestAuthPlugin.get_auth",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py",
+      "target": "httpie/plugins/manager.py::PluginManager",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.__iter__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.register",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.load_installed_plugins",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.get_auth_plugins",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.get_auth_plugin_mapping",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.get_auth_plugin",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.get_formatters",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.get_formatters_grouped",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.get_converters",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager",
+      "target": "httpie/plugins/manager.py::PluginManager.get_transport_plugins",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py",
+      "target": "httpie/sessions.py::get_response",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py",
+      "target": "httpie/sessions.py::Session",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session.__init__",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session._get_path",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session.update_headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session.headers",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session.cookies",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session.cookies",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session.auth",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/sessions.py::Session",
+      "target": "httpie/sessions.py::Session.auth",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/utils.py",
+      "target": "httpie/utils.py::load_json_preserve_order",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/utils.py",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "defines"
+    },
+    {
+      "source": "httpie/__main__.py",
+      "target": "httpie/core.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/cli.py",
+      "target": "httpie/plugins/builtin.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/cli.py",
+      "target": "httpie/sessions.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/cli.py",
+      "target": "httpie/output/formatters/colors.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/cli.py",
+      "target": "httpie/input.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/client.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/config.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/context.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/context.py",
+      "target": "httpie/config.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/client.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/downloads.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/context.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/output/streams.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/core.py",
+      "target": "httpie/cli.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/output/streams.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/models.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/utils.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/downloads.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/sessions.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/input.py",
+      "target": "httpie/utils.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/models.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/output/processing.py",
+      "target": "httpie/context.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/context.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/models.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/input.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/output/streams.py",
+      "target": "httpie/output/processing.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/__init__.py",
+      "target": "httpie/plugins/base.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/__init__.py",
+      "target": "httpie/plugins/manager.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/__init__.py",
+      "target": "httpie/plugins/builtin.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/__init__.py",
+      "target": "httpie/output/formatters/headers.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/__init__.py",
+      "target": "httpie/output/formatters/json.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/__init__.py",
+      "target": "httpie/output/formatters/xml.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/__init__.py",
+      "target": "httpie/output/formatters/colors.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/builtin.py",
+      "target": "httpie/plugins/base.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/plugins/manager.py",
+      "target": "httpie/plugins/base.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/sessions.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/sessions.py",
+      "target": "httpie/config.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/sessions.py",
+      "target": "httpie/client.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/utils.py",
+      "target": "httpie/compat.py",
+      "type": "imports"
+    },
+    {
+      "source": "httpie/client.py::get_requests_session",
+      "target": "httpie/sessions.py::Session",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_session",
+      "target": "httpie/plugins/manager.py::PluginManager.get_transport_plugins",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_session",
+      "target": "httpie/plugins/base.py::TransportPlugin.get_adapter",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_response",
+      "target": "httpie/client.py::get_requests_session",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_response",
+      "target": "httpie/client.py::get_requests_kwargs",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_response",
+      "target": "httpie/sessions.py::get_response",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_response",
+      "target": "httpie/client.py::dump_request",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::dump_request",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::encode_headers",
+      "target": "httpie/input.py::DataDict.items",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_kwargs",
+      "target": "httpie/client.py::get_default_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_kwargs",
+      "target": "httpie/client.py::encode_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_kwargs",
+      "target": "httpie/plugins/base.py::AuthPlugin.get_auth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_kwargs",
+      "target": "httpie/plugins/builtin.py::BasicAuthPlugin.get_auth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_kwargs",
+      "target": "httpie/plugins/builtin.py::DigestAuthPlugin.get_auth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/client.py::get_requests_kwargs",
+      "target": "httpie/plugins/manager.py::PluginManager.get_auth_plugin",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict.path",
+      "target": "httpie/config.py::BaseConfigDict._get_path",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict.path",
+      "target": "httpie/config.py::Config._get_path",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict.path",
+      "target": "httpie/sessions.py::Session._get_path",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict.is_new",
+      "target": "httpie/config.py::BaseConfigDict._get_path",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict.is_new",
+      "target": "httpie/config.py::Config._get_path",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict.is_new",
+      "target": "httpie/sessions.py::Session._get_path",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/config.py::BaseConfigDict.save",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/context.py::Environment.config",
+      "target": "httpie/config.py::Config",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/context.py::Environment.config",
+      "target": "httpie/config.py::BaseConfigDict.is_new",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/context.py::Environment.config",
+      "target": "httpie/config.py::BaseConfigDict.save",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/context.py::Environment.config",
+      "target": "httpie/config.py::BaseConfigDict.load",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/context.py::Environment",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/core.py::decode_args",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/plugins/manager.py::PluginManager.load_installed_plugins",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/core.py::print_debug_info",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/client.py::get_response",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/sessions.py::get_response",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/downloads.py::Download",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/downloads.py::Download.pre_request",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/core.py::get_exit_status",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::build_output_stream",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/downloads.py::Download.failed",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::write_with_colors_win_py3",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/downloads.py::Download.start",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/downloads.py::Download.finish",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/core.py::main",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::parse_content_range",
+      "target": "httpie/downloads.py::ContentRangeError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::parse_content_range",
+      "target": "httpie/downloads.py::ContentRangeError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::parse_content_range",
+      "target": "httpie/downloads.py::ContentRangeError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::parse_content_range",
+      "target": "httpie/downloads.py::ContentRangeError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.__init__",
+      "target": "httpie/downloads.py::Status",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.__init__",
+      "target": "httpie/downloads.py::ProgressReporterThread",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/downloads.py::Status.started",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/output/streams.py::RawStream",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/downloads.py::parse_content_range",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/downloads.py::filename_from_content_disposition",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/downloads.py::filename_from_url",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/downloads.py::get_unique_filename",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/models.py::HTTPResponse",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.start",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.finish",
+      "target": "httpie/downloads.py::Status.finished",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.failed",
+      "target": "httpie/downloads.py::ProgressReporterThread.stop",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::Download.chunk_downloaded",
+      "target": "httpie/downloads.py::Status.chunk_downloaded",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.run",
+      "target": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.run",
+      "target": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.report_speed",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/downloads.py::ProgressReporterThread.sum_up",
+      "target": "httpie/utils.py::humanize_bytes",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._apply_no_options",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._apply_config",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._validate_download_options",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._setup_standard_streams",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._process_output_options",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._process_pretty_options",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._guess_method",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._parse_items",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._process_auth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser.parse_args",
+      "target": "httpie/input.py::HTTPieArgumentParser._body_from_file",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser._process_auth",
+      "target": "httpie/input.py::AuthCredentials.has_password",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser._process_auth",
+      "target": "httpie/input.py::AuthCredentials.prompt_password",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser._process_auth",
+      "target": "httpie/input.py::AuthCredentials",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser._guess_method",
+      "target": "httpie/input.py::KeyValueArgType",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser._parse_items",
+      "target": "httpie/input.py::parse_items",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser._parse_items",
+      "target": "httpie/input.py::HTTPieArgumentParser._body_from_file",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::HTTPieArgumentParser._parse_items",
+      "target": "httpie/input.py::get_content_type",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::AuthCredentials.prompt_password",
+      "target": "httpie/input.py::AuthCredentials._getpass",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::AuthCredentials.prompt_password",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::parse_items",
+      "target": "httpie/input.py::ParseError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::parse_items",
+      "target": "httpie/input.py::get_content_type",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::parse_items",
+      "target": "httpie/utils.py::load_json_preserve_order",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::parse_items",
+      "target": "httpie/input.py::ParseError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::parse_items",
+      "target": "httpie/input.py::ParseError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/input.py::parse_items",
+      "target": "httpie/input.py::ParseError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/models.py::HTTPResponse.iter_lines",
+      "target": "httpie/models.py::HTTPMessage.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/models.py::HTTPResponse.iter_lines",
+      "target": "httpie/models.py::HTTPRequest.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/models.py::HTTPRequest.headers",
+      "target": "httpie/input.py::DataDict.items",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter.format_headers",
+      "target": "httpie/output/formatters/colors.py::HTTPLexer",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter.format_body",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.get_lexer",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter.format_body",
+      "target": "httpie/output/formatters/colors.py::get_lexer",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/formatters/colors.py::ColorFormatter.get_lexer",
+      "target": "httpie/output/formatters/colors.py::get_lexer",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/formatters/xml.py::XMLFormatter.format_body",
+      "target": "httpie/output/formatters/xml.py::indent",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Conversion.get_converter",
+      "target": "httpie/output/processing.py::is_valid_mime",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Conversion.get_converter",
+      "target": "httpie/plugins/manager.py::PluginManager.get_converters",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Conversion.get_converter",
+      "target": "httpie/plugins/base.py::ConverterPlugin.supports",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.__init__",
+      "target": "httpie/context.py::Environment",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.__init__",
+      "target": "httpie/plugins/manager.py::PluginManager.get_formatters_grouped",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_headers",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.format_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_headers",
+      "target": "httpie/output/formatters/headers.py::HeadersFormatter.format_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_headers",
+      "target": "httpie/plugins/base.py::FormatterPlugin.format_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_body",
+      "target": "httpie/output/processing.py::is_valid_mime",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_body",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_body",
+      "target": "httpie/output/formatters/json.py::JSONFormatter.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_body",
+      "target": "httpie/output/formatters/xml.py::XMLFormatter.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/processing.py::Formatting.format_body",
+      "target": "httpie/plugins/base.py::FormatterPlugin.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::write_with_colors_win_py3",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::write_with_colors_win_py3",
+      "target": "httpie/output/streams.py::write",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::build_output_stream",
+      "target": "httpie/output/streams.py::get_stream_type",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::build_output_stream",
+      "target": "httpie/models.py::HTTPRequest",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::build_output_stream",
+      "target": "httpie/models.py::HTTPResponse",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::get_stream_type",
+      "target": "httpie/output/processing.py::Conversion",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::get_stream_type",
+      "target": "httpie/output/processing.py::Formatting",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/output/streams.py::BaseStream.get_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/output/streams.py::PrettyStream.get_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/models.py::HTTPMessage.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/models.py::HTTPResponse.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/models.py::HTTPRequest.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/output/streams.py::BaseStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/output/streams.py::RawStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/output/streams.py::EncodedStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/output/streams.py::PrettyStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BaseStream.__iter__",
+      "target": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream.iter_body",
+      "target": "httpie/models.py::HTTPMessage.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream.iter_body",
+      "target": "httpie/models.py::HTTPResponse.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream.iter_body",
+      "target": "httpie/models.py::HTTPRequest.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream.iter_body",
+      "target": "httpie/output/streams.py::BaseStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream.iter_body",
+      "target": "httpie/output/streams.py::EncodedStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream.iter_body",
+      "target": "httpie/output/streams.py::PrettyStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::RawStream.iter_body",
+      "target": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::EncodedStream.__init__",
+      "target": "httpie/context.py::Environment",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::EncodedStream.iter_body",
+      "target": "httpie/models.py::HTTPMessage.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::EncodedStream.iter_body",
+      "target": "httpie/models.py::HTTPResponse.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::EncodedStream.iter_body",
+      "target": "httpie/models.py::HTTPRequest.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::EncodedStream.iter_body",
+      "target": "httpie/output/streams.py::BinarySuppressedError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.get_headers",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.format_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.get_headers",
+      "target": "httpie/output/formatters/headers.py::HeadersFormatter.format_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.get_headers",
+      "target": "httpie/output/processing.py::Formatting.format_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.get_headers",
+      "target": "httpie/plugins/base.py::FormatterPlugin.format_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/models.py::HTTPMessage.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/models.py::HTTPResponse.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/models.py::HTTPRequest.iter_lines",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/output/streams.py::BinarySuppressedError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/output/processing.py::Conversion.get_converter",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/output/streams.py::PrettyStream.process_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/plugins/base.py::ConverterPlugin.convert",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.iter_body",
+      "target": "httpie/output/streams.py::PrettyStream.process_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.process_body",
+      "target": "httpie/output/formatters/colors.py::ColorFormatter.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.process_body",
+      "target": "httpie/output/formatters/json.py::JSONFormatter.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.process_body",
+      "target": "httpie/output/formatters/xml.py::XMLFormatter.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.process_body",
+      "target": "httpie/output/processing.py::Formatting.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::PrettyStream.process_body",
+      "target": "httpie/plugins/base.py::FormatterPlugin.format_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/models.py::HTTPMessage.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/models.py::HTTPResponse.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/models.py::HTTPRequest.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/output/streams.py::BaseStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/output/streams.py::RawStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/output/streams.py::EncodedStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/output/streams.py::PrettyStream.iter_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/plugins/base.py::ConverterPlugin.convert",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/output/streams.py::PrettyStream.process_body",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/output/processing.py::Conversion.get_converter",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/output/streams.py::BufferedPrettyStream.iter_body",
+      "target": "httpie/output/streams.py::BinarySuppressedError",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/builtin.py::HTTPBasicAuth.__call__",
+      "target": "httpie/plugins/builtin.py::HTTPBasicAuth.make_header",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/builtin.py::BasicAuthPlugin.get_auth",
+      "target": "httpie/plugins/builtin.py::HTTPBasicAuth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager.load_installed_plugins",
+      "target": "httpie/config.py::BaseConfigDict.load",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager.load_installed_plugins",
+      "target": "httpie/plugins/manager.py::PluginManager.register",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager.load_installed_plugins",
+      "target": "httpie/config.py::BaseConfigDict.load",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager.get_auth_plugin_mapping",
+      "target": "httpie/plugins/manager.py::PluginManager.get_auth_plugins",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager.get_auth_plugin",
+      "target": "httpie/plugins/manager.py::PluginManager.get_auth_plugin_mapping",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/plugins/manager.py::PluginManager.get_formatters_grouped",
+      "target": "httpie/plugins/manager.py::PluginManager.get_formatters",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::get_response",
+      "target": "httpie/sessions.py::Session",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::get_response",
+      "target": "httpie/config.py::BaseConfigDict.load",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::get_response",
+      "target": "httpie/client.py::get_requests_kwargs",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::get_response",
+      "target": "httpie/sessions.py::Session.update_headers",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::get_response",
+      "target": "httpie/client.py::dump_request",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::get_response",
+      "target": "httpie/config.py::BaseConfigDict.is_new",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::get_response",
+      "target": "httpie/config.py::BaseConfigDict.save",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::Session.update_headers",
+      "target": "httpie/input.py::DataDict.items",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::Session.cookies",
+      "target": "httpie/input.py::DataDict.items",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::Session.auth",
+      "target": "httpie/plugins/base.py::AuthPlugin.get_auth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::Session.auth",
+      "target": "httpie/plugins/builtin.py::BasicAuthPlugin.get_auth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::Session.auth",
+      "target": "httpie/plugins/builtin.py::DigestAuthPlugin.get_auth",
+      "type": "calls"
+    },
+    {
+      "source": "httpie/sessions.py::Session.auth",
+      "target": "httpie/plugins/manager.py::PluginManager.get_auth_plugin",
+      "type": "calls"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "source_dir": "data/httpie/httpie",
+  "output_graph": "artifacts/graph.json",
+  "output_report": "artifacts/GRAPH_REPORT.md",
+  "report_title": "HTTPie (data/httpie) -- Grphify Graph Report"
+}
