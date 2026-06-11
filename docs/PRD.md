@@ -48,6 +48,7 @@ This project addresses that problem by building a **persistent knowledge layer**
 | Locate & explain Bug #3 via agent | Agent identifies `sessions.py::update_headers` as root cause | Agent's final report names the correct file/function/line |
 | Fix the bug | Failing test passes after fix | Relevant `tests/test_sessions.py` test passes post-fix, fails pre-fix |
 | Prove token savings | `reports/token_comparison.md` | Graph-guided mode shows fewer tokens, fewer files read, and/or fewer iterations than naive mode, with numbers reported even if the result is negative |
+| Show the approach generalizes (Task F) | `reports/multi_bug_summary.md` | Graph-guided agent re-run on all 5 BugsInPy HTTPie bugs, with results summarized per bug |
 | Code quality | Ruff clean, files ≤150 lines, tests for `src/` | `uv run ruff check` passes; `uv run pytest` passes for `tests/` |
 
 ---
@@ -109,7 +110,7 @@ Re-run Grphify and update Obsidian pages after the fix. Capture:
 - Diff summary
 
 ### FR10 — Extensions (Task F)
-Implement at least one original extension per task area (A–E), documented in Obsidian and README.
+Implement at least one original extension per task area (A–E), documented in Obsidian and README. The primary extension is **multi-bug generalization**: re-run the graph-guided agent built for Bug #3 against all 5 BugsInPy HTTPie bugs and summarize results in `reports/multi_bug_summary.md` (see ADR-006).
 
 ---
 
@@ -198,15 +199,23 @@ with diagrams and screenshots throughout.
 
 ### Constraints
 
-- Python 3.7/3.8 required to run HTTPie Bug #3 test suite
+- Python 3.7/3.8 required to run HTTPie's BugsInPy test suites
 - Separate `.venv` under `data/httpie`
 - Main project targets Python 3.11+
 - Environments must remain isolated
-- Scope limited to one bug only (Bug #3)
+- Bug #3 is the single primary deep-dive bug for Tasks A-E (graph, vault,
+  diagrams, agent run, fix, before/after, token comparison); the remaining 4
+  BugsInPy HTTPie bugs are used only for the Task F multi-bug generalization
+  extension (ADR-006), not for full per-bug deliverables
 
 ### Out of Scope
 
-- Fixing or investigating any HTTPie bug other than Bug #3
+- Full per-bug deliverables (diagrams, vault pages, before/after
+  screenshots, individual token comparisons) for HTTPie bugs other than
+  Bug #3 — bugs 1, 2, 4, 5 are only used for the lightweight Task F
+  multi-bug agent re-run (ADR-006)
+- Fixing bugs 1, 2, 4, 5 in `data/httpie` (the agent investigates them but
+  no source fix is applied/verified for them)
 - Production deployment of the agent or graph tooling
 - Full CI/CD pipeline for HTTPie itself
 - Supporting codebases other than HTTPie within this submission
