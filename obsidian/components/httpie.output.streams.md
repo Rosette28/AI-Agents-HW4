@@ -1,5 +1,16 @@
 # httpie/output/streams.py
 
+## Role
+
+Output stream classes (`RawStream`, `PrettyStream`, `BufferedPrettyStream`,
+`EncodedStream`) and `write()` - the most-called function in the graph (16
+incoming edges, see `artifacts/GRAPH_REPORT.md`). Consumes
+[[httpie.models]] request/response objects and [[httpie.output.processing]]
+formatters; used by [[httpie.core]] and [[httpie.downloads]] to print/save
+output.
+
+**Navigation:** [[index]] | [[hot]]
+
 ## Classes
 
 - `BaseStream`

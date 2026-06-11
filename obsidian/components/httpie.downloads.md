@@ -1,5 +1,14 @@
 # httpie/downloads.py
 
+## Role
+
+Implements `--download` mode: `Download`/`ProgressReporterThread` manage the
+file write + progress bar. **Sets `Accept-Encoding: None` on the request
+headers to disable gzip** - this `None` is what crashes
+[[httpie.sessions]]'s `Session.update_headers` for Bug #3 (see [[hot]]).
+
+**Navigation:** [[index]] | [[hot]]
+
 ## Classes
 
 - `ContentRangeError`

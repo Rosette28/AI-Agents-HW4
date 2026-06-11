@@ -109,14 +109,44 @@ Priorities: **P0** (blocking/critical), **P1** (required for grading), **P2** (n
   graph (e.g. `httpie.sessions` <-> `httpie.client`/`httpie.cli`/`httpie.input`).
   Added unit tests (`tests/unit/test_vault_builder.py`).
 
-- **1.15 — Write `obsidian/index.md`** [P0] [Not Started] (A)
+- **1.15 — Write `obsidian/index.md`** [P0] [Done] (A)
   DoD: Describes HTTPie's system structure, main modules, and primary navigation paths, with links to component pages.
+  Resolution: Replaced the 1.14 stub with a full system map grouping the 25
+  HTTPie modules into Entry Points, CLI & Argument Parsing, HTTP Client &
+  Request/Response Flow, Sessions & Configuration, Output Formatting,
+  Downloads, Plugins, and Utilities, each linking to its
+  `obsidian/components/*.md` page. Added 5 "Primary Navigation Paths"
+  (CLI->response happy path, session-aware request, download mode that
+  triggers Bug #3, output formatting, plugin resolution) as `[[wikilink]]`
+  chains, plus a link to [[hot]] and the `artifacts/` reference files.
 
-- **1.16 — Write `obsidian/hot.md`** [P0] [Not Started] (A)
+- **1.16 — Write `obsidian/hot.md`** [P0] [Done] (A)
   DoD: Documents Bug #3 suspects (`sessions.py::update_headers`), relevant test, knowns/unknowns.
+  Resolution: Replaced the 1.14 stub with the full Bug #3 brief: primary
+  suspect `Session.update_headers` (with the buggy snippet and exact
+  `AttributeError`), how it's triggered via `--download` ->
+  `Accept-Encoding: None` ([[httpie.downloads]] -> [[httpie.sessions]]),
+  the relevant test (`test_download_in_session`, ported per task 1.7, with
+  the exact pytest invocation), the known one-line fix (not yet applied,
+  Task 3.5), a Knowns/Unknowns section referencing the graph's
+  "Imported By" relations, and a "Known Unrelated Issue" section
+  summarizing task 1.8's `test_session_ignored_header_prefixes` finding.
+  Cross-linked to [[index]] and the relevant component pages.
 
-- **1.17 — Add component pages for key modules (cli, client, sessions, downloads, models, output)** [P1] [Not Started] (B)
+- **1.17 — Add component pages for key modules (cli, client, sessions, downloads, models, output)** [P1] [Done] (B)
   DoD: One short Markdown page per key module, cross-linked to `index.md`/`hot.md`.
+  Resolution: All 25 modules already have auto-generated pages from 1.14
+  (`obsidian/components/*.md`). For the 6 key modules
+  (`httpie.cli`, `httpie.client`, `httpie.sessions`, `httpie.downloads`,
+  `httpie.models`, `httpie.output.streams`), prepended a hand-written
+  "## Role" section (1-3 sentences on responsibility + how it relates to
+  Bug #3 where relevant) and a "**Navigation:** [[index]] | [[hot]]" line
+  above the auto-generated Classes/Functions/Imports sections.
+  Note: re-running `graphify-agent vault` would overwrite these manual
+  "## Role"/Navigation additions (it regenerates the full file); acceptable
+  for now since the graph is not expected to change again before Task 3.8
+  (post-fix re-run), at which point these additions should be re-applied or
+  the builder extended to preserve hand-written sections.
 
 - **1.18 — Take "before" screenshots of Obsidian graph view** [P1] [Not Started] (B)
   DoD: Screenshots saved to `assets/` for later before/after comparison.
