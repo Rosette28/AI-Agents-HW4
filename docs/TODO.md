@@ -148,8 +148,12 @@ Priorities: **P0** (blocking/critical), **P1** (required for grading), **P2** (n
   (post-fix re-run), at which point these additions should be re-applied or
   the builder extended to preserve hand-written sections.
 
-- **1.18 — Take "before" screenshots of Obsidian graph view** [P1] [Not Started] (B)
+- **1.18 — Take "before" screenshots of Obsidian graph view** [P1] [Done] (B)
   DoD: Screenshots saved to `assets/` for later before/after comparison.
+  Resolution: Saved `assets/before_graph_full.png` (full vault graph view)
+  and `assets/before_graph_sessions_focus.png` (zoomed on `httpie.sessions`
+  and its neighbors, the Bug #3 area). To be paired with "after" screenshots
+  in Task 3.10 for the before/after comparison section (Task 3.11).
 
 **Milestone M1:** Knowledge base ready — `graph.json`, `GRAPH_REPORT.md`, full Obsidian vault skeleton (`index.md`, `hot.md`, component pages), "before" screenshots, PRD/PLAN/TODO complete.
 
