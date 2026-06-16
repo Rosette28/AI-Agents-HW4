@@ -1,4 +1,3 @@
-```python
 from __future__ import annotations
 
 import json
@@ -124,4 +123,3 @@ def search_nodes(
     matches.sort(key=lambda item: item[0])
 
     return [node for _, node in matches]
-```
