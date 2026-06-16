@@ -62,6 +62,38 @@ The main architectural subsystems identified during reverse engineering are:
 
 Graph analysis revealed that the architecture follows a layered structure where user input is parsed, transformed into request objects, processed by the client layer, persisted in sessions, and finally rendered through the output subsystem.
 
+
+## OOP Schema
+
+```mermaid
+classDiagram
+
+class Session {
+    +auth
+    +cookies
+    +headers
+    +update_headers()
+}
+
+class Download {
+    +pre_request()
+    +start()
+    +finish()
+}
+
+class ProgressReporterThread {
+    +run()
+    +stop()
+}
+
+class Status
+
+Download --> Status
+Download --> ProgressReporterThread
+Download ..> Session : indirect interaction through request pipeline
+```
+
+
 ## Architecture Diagram
 
 ```mermaid
