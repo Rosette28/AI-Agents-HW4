@@ -8,3 +8,6 @@ def read_page(path: Path) -> str:
 
 def list_pages(directory: Path) -> list[Path]:
     return sorted(directory.glob("*.md"))
+
+def write_page(path: Path, content: str) -> None:
+    path.write_text(content, encoding="utf-8")

@@ -1,0 +1,16 @@
+{
+  "bug_id": 3,
+  "candidates": [
+    "httpie.sessions",
+    "httpie.downloads",
+    "httpie.client"
+  ],
+  "ranked_candidates": [
+    "httpie.sessions",
+    "httpie.downloads",
+    "httpie.client"
+  ],
+  "root_cause": "Session.update_headers calls value.decode('utf8') without checking for None",
+  "fix_proposal": "Add a guard: if value is None: continue",
+  "success": true
+}

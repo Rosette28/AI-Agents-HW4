@@ -136,7 +136,33 @@ Plugins --> Core
 
 ## Agent Workflow
 
-*(To be completed — CrewAI/LangGraph workflow description.)*
+The graph-guided workflow consists of four stages:
+
+1. **Navigator Agent**
+
+   * Reads `index.md` and `hot.md`.
+   * Identifies candidate components relevant to the bug.
+
+2. **Suspect Ranker**
+
+   * Prioritizes components according to their relevance.
+
+3. **Code Reader**
+
+   * Reads only the selected component pages from the Obsidian vault.
+
+4. **Explainer Agent**
+
+   * Produces the final root-cause explanation.
+
+The workflow successfully identified:
+
+* `httpie.sessions`
+* `httpie.downloads`
+* `httpie.client`
+
+as the most relevant components for Bug #3 and correctly reported the root cause in `Session.update_headers()`.
+
 
 ## Grphify & Obsidian Usage
 
