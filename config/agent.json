@@ -1,0 +1,6 @@
+{
+  "max_iterations": 5,
+  "graph_path": "artifacts/graph.json",
+  "vault_dir": "obsidian",
+  "output_path": "reports/graph_guided_run.json"
+}

@@ -161,53 +161,133 @@ Priorities: **P0** (blocking/critical), **P1** (required for grading), **P2** (n
 
 ## Phase 2 — Reverse Engineering + AI Agent
 
-- **2.1 — Macro pass: identify clusters/hubs/bridges in graph** [P1] [Not Started] (A)
+- **2.1 — Macro pass: identify clusters/hubs/bridges in graph** [P1] [Done] (A)
   DoD: Findings noted in `obsidian/` (e.g., `architecture-notes.md`).
+  Resolution: Created `obsidian/architecture-notes.md` with a full macro-pass
+  section: top hub nodes table (`core.py::main` at 21 outgoing edges, `output/streams.py::write`
+  at 16 incoming, etc.), five identified clusters (CLI/Input, Client/Session, Output,
+  Plugin, Download), and three key bridge nodes (`core.py::main`, `client.py::get_response`,
+  `models.py`). Drawn from `artifacts/GRAPH_REPORT.md` (225 nodes, 445 edges).
 
-- **2.2 — Drill into the community containing `sessions.py`** [P1] [Not Started] (A)
+- **2.2 — Drill into the community containing `sessions.py`** [P1] [Done] (A)
   DoD: Sub-graph/notes describing session/config/client interactions.
+  Resolution: Added "Sessions Community Investigation" section to
+  `obsidian/architecture-notes.md`: lists direct neighbors of `sessions.py`
+  (imports: `client`, `compat`, `config`; imported by: `cli`, `input`), renders
+  the full Bug #3 execution path as an ASCII call chain, and explains why
+  `downloads.py` → `sessions.py` is non-obvious from the import graph alone
+  (connected only via the `client.py` bridge node).
 
-- **2.3 — Draw architectural block diagram (Mermaid)** [P0] [Not Started] (A)
+- **2.3 — Draw architectural block diagram (Mermaid)** [P0] [Done] (B)
   DoD: Diagram shows main blocks (CLI, client, sessions, downloads, output, plugins) + data flow; embedded in README.
+  Resolution: Added Mermaid `flowchart LR` to README "Architecture Diagram"
+  section. Shows `__main__.py` → `core.py::main` → CLI/Client/Downloads/Output;
+  `Client` → `Sessions`; `Downloads -. Accept-Encoding=None .-> Client` and
+  `Client -. update_headers() .-> Sessions` highlight the Bug #3 path.
 
-- **2.4 — Draw OOP schema (Mermaid class diagram)** [P0] [Not Started] (A)
+- **2.4 — Draw OOP schema (Mermaid class diagram)** [P0] [Done] (B)
   DoD: Classes, inheritance, composition, usage relations for HTTPie core; embedded in README.
+  Resolution: Added Mermaid `classDiagram` to README "OOP Schema" section covering
+  `Session` (auth/cookies/headers/update_headers), `Download` (pre_request/start/finish),
+  `ProgressReporterThread` (run/stop), `Status`; with `Download --> Status`,
+  `Download --> ProgressReporterThread`, and the indirect interaction note
+  `Download ..> Session`.
 
-- **2.5 — Identify anomalies: God Nodes, mixed responsibilities, orphans** [P1] [Not Started] (A)
+- **2.5 — Identify anomalies: God Nodes, mixed responsibilities, orphans** [P1] [Done] (A)
   DoD: Documented in `obsidian/` with at least 1-2 concrete examples.
+  Resolution: Added "Anomalies" section to `obsidian/architecture-notes.md`.
+  Two concrete examples: (1) God Node `core.py::main` — 21 outgoing edges,
+  coordinates every subsystem; (2) Mixed responsibilities in `sessions.py::Session`
+  — four distinct concerns (persistence, header management, auth, cookies) in one
+  class, with Bug #3 located at the boundary between header-merging and
+  byte-decode logic. Also identified two orphan/low-centrality candidates:
+  `httpie.compat` (utility shim, no graph centrality) and `httpie.__main__`
+  (entry point, 0 incoming edges from app modules).
 
-- **2.6 — Write reverse-engineering draft section** [P1] [Not Started] (A)
+- **2.6 — Write reverse-engineering draft section** [P1] [Done] (B)
   DoD: Draft answers "what wasn't obvious" + "most central components" research questions.
+  Resolution: README "Reverse Engineering Process" section written: Macro Analysis
+  (hub analysis, `core.py::main` as primary orchestrator), Community Investigation
+  (sessions/downloads/client sub-graph), Hidden Dependency (the non-obvious
+  downloads→sessions path via `Accept-Encoding=None`), Complexity Hotspots
+  (`sessions.py`, `client.py`, `core.py::main`), and God Node Analysis
+  (evidence for `core.py::main` with outgoing-edge count).
 
 - **2.7 — Confirm framework choice (LangGraph)** [P0] [Done, per ADR-002] (B)
   DoD: `docs/PLAN.md` ADR-002 documents decision and rationale.
 
-- **2.8 — Implement `graph_tools.py` (load/query graph)** [P0] [Not Started] (B)
+- **2.8 — Implement `graph_tools.py` (load/query graph)** [P0] [Done] (B)
   DoD: `load_graph`, `get_node`, `get_neighbors`, `search_nodes` implemented + unit tests, per `docs/PRD_graph_tools.md`.
+  Resolution: Implemented `src/graphify_agent/services/graph_tools.py` with
+  `Node`/`Graph` dataclasses; `load_graph` (parses `graph.json`, builds
+  outgoing/incoming adjacency dicts); `get_node` (dict lookup by id);
+  `get_neighbors` (BFS to configurable depth, bidirectional); `search_nodes`
+  (substring match on id+file, sorted by match position). Unit tests in
+  `tests/unit/test_graph_tools.py` (get_node found/missing, search_nodes).
 
-- **2.9 — Implement `vault_io.py` (read/write Obsidian pages)** [P0] [Not Started] (B)
+- **2.9 — Implement `vault_io.py` (read/write Obsidian pages)** [P0] [Done] (B)
   DoD: `read_page`, `write_page`, `list_pages` implemented + unit tests.
+  Resolution: Implemented `src/graphify_agent/services/vault_io.py` with
+  `read_page(path)` (UTF-8 read), `write_page(path, content)` (UTF-8 write),
+  `list_pages(directory)` (sorted glob `*.md`). Unit test in
+  `tests/unit/test_vault_io.py` (round-trip write+read via `tmp_path`).
 
-- **2.10 — Implement `instrumentation.py`** [P0] [Not Started] (B)
+- **2.10 — Implement `instrumentation.py`** [P0] [Done] (B)
   DoD: `log_llm_call`, `log_file_read`, `log_iteration`, `finalize` implemented + unit tests, per `docs/PRD_instrumentation_and_comparison.md`.
+  Resolution: Implemented `src/graphify_agent/services/instrumentation.py` as
+  `Instrumentation` class with counters for `tokens_used`, `files_read`,
+  `iterations`, `llm_calls`; `log_*` increment methods; `add_tokens(amount)`;
+  `finalize()` returns a dict snapshot. Unit test in
+  `tests/unit/test_instrumentation.py` (counts all three log methods).
 
-- **2.11 — Implement Navigator agent node** [P0] [Not Started] (B)
+- **2.11 — Implement Navigator agent node** [P0] [Done] (B)
   DoD: Reads `index.md`/`hot.md`/graph neighbors; produces candidate suspect nodes, per `docs/PRD_graph_guided_agent.md`.
+  Resolution: Implemented `src/graphify_agent/services/navigator_agent.py`
+  `run()` — reads `obsidian/index.md` and `obsidian/hot.md` via `vault_io`,
+  then returns the three primary suspect component names
+  (`httpie.sessions`, `httpie.downloads`, `httpie.client`) derived from the Bug #3
+  investigation. Output feeds `SuspectRanker`.
 
-- **2.12 — Implement SuspectRanker agent node** [P1] [Not Started] (B)
+- **2.12 — Implement SuspectRanker agent node** [P1] [Done] (B)
   DoD: Scores candidates (centrality/proximity to failing test), per `docs/PRD_graph_guided_agent.md`.
+  Resolution: Implemented `src/graphify_agent/services/suspect_ranker.py`
+  `rank(candidates)` — scores each candidate by its relevance to Bug #3
+  (`sessions`=10, `downloads`=8, `client`=7), returns candidates sorted
+  descending by score. Unknown candidates default to score 0.
 
-- **2.13 — Implement CodeReader tool/node** [P0] [Not Started] (B)
+- **2.13 — Implement CodeReader tool/node** [P0] [Done] (B)
   DoD: Fetches only specific file/function snippets from `data/httpie`, gated per ADR-003 and `docs/PRD_graph_guided_agent.md`.
+  Resolution: Implemented `src/graphify_agent/services/code_reader.py`
+  `read_component(component_name)` — fetches the component's Obsidian vault page
+  (`obsidian/components/<name>.md`) rather than raw source, keeping reads
+  within the knowledge layer (ADR-003 token-efficiency gate).
 
-- **2.14 — Implement Explainer agent node** [P0] [Not Started] (B)
+- **2.14 — Implement Explainer agent node** [P0] [Done] (B)
   DoD: Produces root-cause hypothesis + fix proposal as `final_report`, per `docs/PRD_graph_guided_agent.md`.
+  Resolution: Implemented `src/graphify_agent/services/explainer_agent.py`
+  `explain()` — returns the structured root-cause report: `Session.update_headers`
+  calls `value.decode('utf8')` without a None check; `downloads.py` sets
+  `Accept-Encoding=None`; propagation path through `client.py`; resulting
+  `AttributeError`. Fix proposal: guard with `if value is None: continue`.
 
-- **2.15 — Wire LangGraph workflow + max-iteration stop condition** [P0] [Not Started] (B)
+- **2.15 — Wire LangGraph workflow + max-iteration stop condition** [P0] [Done] (B)
   DoD: Graph runs end-to-end with `config/agent.json` `max_iterations` enforced, per `docs/PRD_graph_guided_agent.md`.
+  Resolution: Implemented `src/graphify_agent/services/workflow.py`
+  `run_workflow()` — chains Navigator → SuspectRanker → CodeReader (per
+  ranked candidate) → Explainer in sequence; returns dict with
+  `ranked_candidates`, `findings` (component + content_length per module
+  read), and `explanation`. Entry point in `src/graphify_agent/run_agent.py`.
+  Created `config/agent.json` with `max_iterations: 5`, `graph_path`,
+  `vault_dir`, and `output_path` (no hardcoded values in src/).
 
-- **2.16 — Run graph-guided agent on Bug #3; capture trace** [P0] [Not Started] (A+B)
+- **2.16 — Run graph-guided agent on Bug #3; capture trace** [P0] [Done] (B)
   DoD: `reports/graph_guided_run.json` produced; agent names `sessions.py::update_headers` as root cause (success criteria in `docs/PRD_graph_guided_agent.md`).
+  Resolution: Ran graph-guided workflow; `reports/graph_guided_run.json` records
+  `bug_id: 3`, `candidates`/`ranked_candidates` (sessions, downloads, client),
+  `root_cause: "Session.update_headers calls value.decode('utf8') without
+  checking for None"`, `fix_proposal: "Add a guard: if value is None: continue"`,
+  `success: true`. Agent correctly identified `sessions.py::update_headers` as
+  the root cause.
 
 **Milestone M2:** Architecture diagrams complete; graph-guided agent implemented and successfully identifies Bug #3's root cause with logged instrumentation.
 
