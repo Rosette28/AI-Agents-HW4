@@ -49,19 +49,19 @@ calls `.decode('utf8')` on it unconditionally.
 - Run via: `data/httpie/.venv/Scripts/python -m pytest tests/test_sessions.py::TestSession::test_download_in_session -q`
   (from `data/httpie/`).
 
-## Known Fix (not yet applied - Task 3.5)
+## Fix Applied (Task 3.5 ✅)
 
 ```python
 for name, value in request_headers.items():
     if value is None:
-        continue  # Ignore explicitely unset headers
+        continue  # guard: skip headers explicitly unset (e.g. Accept-Encoding)
     value = value.decode('utf8')
     ...
 ```
 
-A `None`-check guard before the `.decode('utf8')` call. Per
-`docs/PRD.md` FR8, this is the one-line fix to apply and verify in Task
-3.5/3.6.
+A `None`-check guard added before the `.decode('utf8')` call at line 104 of
+`data/httpie/httpie/sessions.py`. **`test_download_in_session` now passes.**
+See README "Bug Description, Root Cause & Fix" for the full verification record.
 
 ## Knowns
 

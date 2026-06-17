@@ -7,7 +7,9 @@ authors = [
     { name = "RosetteKh", email = "khrosa289@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.0",
+]
 
 [project.scripts]
 graphify-agent = "graphify_agent:main"

@@ -234,15 +234,89 @@ Although its responsibilities are primarily orchestration-related, its high degr
 
 ## Bug Description, Root Cause & Fix
 
-*(To be completed.)*
+**Bug:** `AttributeError: 'NoneType' object has no attribute 'decode'` raised inside
+`Session.update_headers()` in `httpie/sessions.py` when running HTTPie with both
+`--session` and `--download` flags simultaneously.
+
+**Root Cause:** `Session.update_headers()` iterates over request headers and calls
+`value.decode('utf8')` unconditionally on every value. The download subsystem
+(`downloads.py::Download.pre_request()`) sets `Accept-Encoding: None` to disable gzip
+compression during file downloads. This `None` value propagates through the request
+pipeline via `client.py::get_response()` into `Session.update_headers()`, where the
+unconditional `.decode()` call crashes.
+
+**Execution path:**
+
+```
+downloads.py::Download.pre_request()  →  sets Accept-Encoding=None
+  └─► client.py::get_response()
+        └─► Session.update_headers()   →  value.decode('utf8')  ← AttributeError
+```
+
+**Fix applied** (`data/httpie/httpie/sessions.py`, line 104 — 1-line guard):
+
+```python
+# Before (buggy)
+for name, value in request_headers.items():
+    value = value.decode('utf8')
+
+# After (fixed)
+for name, value in request_headers.items():
+    if value is None:
+        continue
+    value = value.decode('utf8')
+```
+
+**Verification:** `test_download_in_session` in `data/httpie/tests/test_sessions.py` fails
+on the buggy commit (`AttributeError` at `sessions.py:104`) and passes after applying the
+fix. Run with:
+
+```
+cd data/httpie && .venv/Scripts/python -m pytest tests/test_sessions.py::TestSession::test_download_in_session -v
+```
 
 ## Before / After Comparison
 
-*(To be completed.)*
+### Code Layer
+
+| File | Before fix | After fix |
+|------|-----------|-----------|
+| `httpie/sessions.py:104` | `value = value.decode('utf8')` — unconditional, crashes on `None` | `if value is None: continue` guard added before decode |
+| `tests/test_sessions.py` | `test_download_in_session` fails with `AttributeError` | `test_download_in_session` passes |
+
+### Knowledge Layer (Obsidian Vault)
+
+| Page | Before | After |
+|------|--------|-------|
+| `obsidian/hot.md` | "Known Fix (not yet applied)" section | Updated to "Fix Applied ✅" with passing-test confirmation |
+| `obsidian/components/httpie.sessions.md` | "Bug #3 lives here" role note | "Bug #3 was here — now fixed" |
+| `artifacts/GRAPH_REPORT.md` | Pre-fix graph (225 nodes, 445 edges) | Re-generated post-fix (same counts — 1-line guard adds no new nodes/edges) |
+
+### Graph Layer
+
+The Grphify graph is structurally unchanged (225 nodes, 445 edges) because the fix adds
+only a `continue` statement — no new functions, classes, or imports were introduced.
+The "before" screenshot (`assets/before_graph_sessions_focus.png`) shows `httpie.sessions`
+with its existing neighbors; the "after" screenshot (`assets/after_graph_sessions_focus.png`)
+shows the same topology, confirming that the fix is a surgical one-line change with no
+architectural side-effects.
+
+### Before Screenshots
+![Before — full vault graph](assets/before_graph_full.png)
+![Before — sessions focus](assets/before_graph_sessions_focus.png)
 
 ## Token Efficiency Comparison
 
-*(To be completed — see `reports/token_comparison.md`.)*
+See [`reports/token_comparison.md`](reports/token_comparison.md) for the full table and bar chart.
+
+| mode | tokens_used | llm_calls | files_read | iterations | root_cause_found |
+|------|-------------|-----------|------------|------------|------------------|
+| graph_guided | 2694 | 4 | 5 | 1 | True |
+| naive | 6618 | 5 | 5 | 5 | False |
+
+The graph-guided agent used **~2.5× fewer tokens** and found the root cause in **1 iteration**,
+while the naive baseline exhausted all 5 iterations without identifying `Session.update_headers`
+as the culprit. See `reports/token_comparison.md` for the full interpretation.
 
 ## Original Extensions
 

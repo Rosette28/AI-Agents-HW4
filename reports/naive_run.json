@@ -1,0 +1,18 @@
+{
+  "mode": "naive",
+  "bug_id": 3,
+  "files_examined": [
+    "httpie\\__init__.py",
+    "httpie\\__main__.py",
+    "httpie\\cli.py",
+    "httpie\\client.py",
+    "httpie\\compat.py"
+  ],
+  "root_cause_found": false,
+  "root_cause": null,
+  "fix_proposal": null,
+  "tokens_used": 6618,
+  "llm_calls": 5,
+  "files_read": 5,
+  "iterations": 5
+}

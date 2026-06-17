@@ -305,7 +305,7 @@
       "file": "httpie/sessions.py",
       "lines": [
         1,
-        152
+        154
       ],
       "metrics": {
         "in_degree": 2,
@@ -2814,7 +2814,7 @@
       "file": "httpie/sessions.py",
       "lines": [
         77,
-        152
+        154
       ],
       "metrics": {
         "in_degree": 3,
@@ -2853,7 +2853,7 @@
       "file": "httpie/sessions.py",
       "lines": [
         95,
-        112
+        114
       ],
       "metrics": {
         "in_degree": 2,
@@ -2865,8 +2865,8 @@
       "type": "function",
       "file": "httpie/sessions.py",
       "lines": [
-        115,
-        116
+        117,
+        118
       ],
       "metrics": {
         "in_degree": 1,
@@ -2878,8 +2878,8 @@
       "type": "function",
       "file": "httpie/sessions.py",
       "lines": [
-        128,
-        139
+        130,
+        141
       ],
       "metrics": {
         "in_degree": 2,
@@ -2891,8 +2891,8 @@
       "type": "function",
       "file": "httpie/sessions.py",
       "lines": [
-        150,
-        152
+        152,
+        154
       ],
       "metrics": {
         "in_degree": 2,
