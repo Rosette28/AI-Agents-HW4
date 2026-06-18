@@ -21,8 +21,12 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
     "ruff>=0.15.17",
 ]
+
+[tool.ruff]
+exclude = ["data/"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

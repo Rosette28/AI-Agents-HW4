@@ -1,11 +1,4 @@
-"""Grphify graph builder.
-
-Static-analysis ("Grphify") step: walks a Python package with ``ast`` and
-produces the ``{nodes, edges}`` graph described in ``docs/PLAN.md`` (6.1).
-Read-only consumers of the resulting graph live in ``graph_tools``
-(``docs/PRD_graph_tools.md``).
-"""
-
+"""Build the {nodes, edges} graph by AST-walking a Python package (Grphify step)."""
 from __future__ import annotations
 
 import ast
@@ -13,6 +6,10 @@ from pathlib import Path
 from typing import Any
 
 _DEF_TYPES = (ast.FunctionDef, ast.AsyncFunctionDef)
+
+
+def _mk_node(id_: str, type_: str, file: str, lines: list[int]) -> dict[str, Any]:
+    return {"id": id_, "type": type_, "file": file, "lines": lines}
 
 
 def _node_id(rel_path: str, *parts: str) -> str:
@@ -29,78 +26,48 @@ def build_graph(source_dir: Path) -> dict[str, Any]:
     source_dir = Path(source_dir)
     package_root = source_dir.parent
     py_files = sorted(source_dir.rglob("*.py"))
-
     nodes: dict[str, dict[str, Any]] = {}
     edges: list[dict[str, str]] = []
     module_by_dotted: dict[str, str] = {}
     simple_name_index: dict[str, list[str]] = {}
     trees: dict[str, ast.Module] = {}
-
     for path in py_files:
         rel = path.relative_to(package_root).as_posix()
         source = path.read_text(encoding="utf-8", errors="replace")
         tree = ast.parse(source, filename=rel)
         trees[rel] = tree
-        nodes[rel] = {
-            "id": rel,
-            "type": "module",
-            "file": rel,
-            "lines": [1, len(source.splitlines())],
-        }
+        nodes[rel] = _mk_node(rel, "module", rel, [1, len(source.splitlines())])
         module_by_dotted[_module_name(path.relative_to(package_root))] = rel
-
     _add_definitions(trees, nodes, edges, simple_name_index)
     _add_imports(trees, module_by_dotted, edges)
     _add_calls(trees, simple_name_index, edges)
     _compute_degrees(nodes, edges)
-
     return {"nodes": list(nodes.values()), "edges": edges}
 
 
 def _add_definitions(
-    trees: dict[str, ast.Module],
-    nodes: dict[str, dict[str, Any]],
-    edges: list[dict[str, str]],
-    simple_name_index: dict[str, list[str]],
+    trees: dict[str, ast.Module], nodes: dict[str, dict], edges: list, name_idx: dict
 ) -> None:
     for rel, tree in trees.items():
         for item in tree.body:
             if isinstance(item, ast.ClassDef):
                 class_id = _node_id(rel, item.name)
-                nodes[class_id] = {
-                    "id": class_id,
-                    "type": "class",
-                    "file": rel,
-                    "lines": [item.lineno, item.end_lineno or item.lineno],
-                }
+                nodes[class_id] = _mk_node(class_id, "class", rel, [item.lineno, item.end_lineno or item.lineno])
                 edges.append({"source": rel, "target": class_id, "type": "defines"})
-                simple_name_index.setdefault(item.name, []).append(class_id)
+                name_idx.setdefault(item.name, []).append(class_id)
                 for sub in item.body:
                     if isinstance(sub, _DEF_TYPES):
                         m_id = _node_id(rel, item.name, sub.name)
-                        nodes[m_id] = {
-                            "id": m_id,
-                            "type": "function",
-                            "file": rel,
-                            "lines": [sub.lineno, sub.end_lineno or sub.lineno],
-                        }
+                        nodes[m_id] = _mk_node(m_id, "function", rel, [sub.lineno, sub.end_lineno or sub.lineno])
                         edges.append({"source": class_id, "target": m_id, "type": "defines"})
+                        # Exclude dunders from call resolution: they flood the graph with noise.
                         if not (sub.name.startswith("__") and sub.name.endswith("__")):
-                            # Exclude dunder methods (e.g. __init__) from call
-                            # resolution: nearly every class defines them, so
-                            # including them floods the graph with
-                            # false-positive "calls" edges.
-                            simple_name_index.setdefault(sub.name, []).append(m_id)
+                            name_idx.setdefault(sub.name, []).append(m_id)
             elif isinstance(item, _DEF_TYPES):
                 f_id = _node_id(rel, item.name)
-                nodes[f_id] = {
-                    "id": f_id,
-                    "type": "function",
-                    "file": rel,
-                    "lines": [item.lineno, item.end_lineno or item.lineno],
-                }
+                nodes[f_id] = _mk_node(f_id, "function", rel, [item.lineno, item.end_lineno or item.lineno])
                 edges.append({"source": rel, "target": f_id, "type": "defines"})
-                simple_name_index.setdefault(item.name, []).append(f_id)
+                name_idx.setdefault(item.name, []).append(f_id)
 
 
 def _resolve_relative(rel: str, level: int, module: str | None) -> str | None:
@@ -113,9 +80,7 @@ def _resolve_relative(rel: str, level: int, module: str | None) -> str | None:
 
 
 def _add_imports(
-    trees: dict[str, ast.Module],
-    module_by_dotted: dict[str, str],
-    edges: list[dict[str, str]],
+    trees: dict[str, ast.Module], module_by_dotted: dict[str, str], edges: list
 ) -> None:
     for rel, tree in trees.items():
         for item in ast.walk(tree):
@@ -138,9 +103,7 @@ def _add_imports(
 
 
 def _add_calls(
-    trees: dict[str, ast.Module],
-    simple_name_index: dict[str, list[str]],
-    edges: list[dict[str, str]],
+    trees: dict[str, ast.Module], simple_name_index: dict[str, list[str]], edges: list
 ) -> None:
     for rel, tree in trees.items():
         funcs: list[tuple[str, ast.AST]] = []
@@ -151,7 +114,6 @@ def _add_calls(
                 for sub in item.body:
                     if isinstance(sub, _DEF_TYPES):
                         funcs.append((_node_id(rel, item.name, sub.name), sub))
-
         for caller_id, func_node in funcs:
             for call in ast.walk(func_node):
                 if not isinstance(call, ast.Call):
@@ -168,7 +130,7 @@ def _add_calls(
                         edges.append({"source": caller_id, "target": target_id, "type": "calls"})
 
 
-def _compute_degrees(nodes: dict[str, dict[str, Any]], edges: list[dict[str, str]]) -> None:
+def _compute_degrees(nodes: dict[str, dict], edges: list) -> None:
     for node in nodes.values():
         node["metrics"] = {"in_degree": 0, "out_degree": 0}
     for edge in edges:

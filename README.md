@@ -346,6 +346,10 @@ architectural side-effects.
 ![Before — full vault graph](assets/before_graph_full.png)
 ![Before — sessions focus](assets/before_graph_sessions_focus.png)
 
+### After Screenshots (post-fix)
+![After — full vault graph](assets/after_graph_full.png)
+![After — sessions focus](assets/after_graph_sessions_focus.png)
+
 ## Token Efficiency Comparison
 
 See [`reports/token_comparison.md`](reports/token_comparison.md) for the full table and bar chart.
@@ -393,22 +397,56 @@ Beyond token savings, the workflow tracks whether the root cause was successfull
 uv sync
 ```
 
-### Generate graph
+### Generate Grphify graph
 
 ```bash
-uv run python -m graphify_agent.sdk
+uv run graphify-agent graph
 ```
 
-### Run graph-guided workflow
+Output: `artifacts/graph.json` + `artifacts/GRAPH_REPORT.md`
+
+### Build Obsidian vault pages
 
 ```bash
-uv run python -m graphify_agent.run_agent
+uv run graphify-agent vault
 ```
+
+Output: `obsidian/components/*.md` (one page per HTTPie module)
+
+### Run graph-guided agent on Bug #3
+
+```bash
+uv run graphify-agent agent
+```
+
+Output: `reports/graph_guided_run.json`
+
+### Run naive baseline agent
+
+```bash
+uv run graphify-agent agent --mode=naive
+```
+
+Output: `reports/naive_run.json`
+
+### Generate token comparison report
+
+```bash
+uv run graphify-agent compare
+```
+
+Output: `reports/token_comparison.md` + `reports/token_comparison.png`
 
 ### Run tests
 
 ```bash
 uv run pytest
+```
+
+### Run tests with coverage
+
+```bash
+uv run pytest --cov=src/graphify_agent --cov-report=term-missing
 ```
 
 ### Run linting
