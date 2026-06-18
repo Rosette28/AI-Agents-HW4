@@ -99,7 +99,7 @@ def run_compare() -> Path:
         "- `naive` metrics: recorded live during `run_naive_baseline()` "
         "(files read in sorted order, capped at `max_iterations=5`).\n"
         "- `llm_calls` for graph-guided: 4 (Navigator, SuspectRanker, CodeReader, Explainer).\n\n"
-        f"![Token comparison bar chart](token_comparison.png)\n"
+        "![Token comparison bar chart](token_comparison.png)\n"
     )
 
     out = PROJECT_ROOT / "reports" / "token_comparison.md"

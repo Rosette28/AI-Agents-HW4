@@ -4,9 +4,41 @@
 
 We chose **[HTTPie](https://github.com/jakubroztocil/httpie)** via its **BugsInPy** entry (`projects/httpie`) as our base repository. HTTPie is a real-world, multi-module command-line HTTP client (CLI argument parsing, HTTP client/session handling, downloads, output formatting, and plugins) — large and structured enough to produce a meaningful Grphify graph, architectural block diagram, and OOP schema, while still being approachable for two people. Within this codebase, we picked **Bug #3**: in `httpie/sessions.py`, `Session.remove_cookies`/header-update logic calls `value.decode('utf8')` on header values without checking for `None`, causing an `AttributeError` whenever a session has explicitly unset headers (covered by `tests/test_sessions.py::TestSession::test_download_in_session`). This bug is small and localized — a one-line guard fix — yet it sits inside the session/config layer, which connects to several other modules (CLI, client, downloads), making it a good focal point for `hot.md` and the graph-guided agent. BugsInPy provides a reproducible buggy/fixed commit pair and a ready-to-run failing test, which we use for the agent investigation, the fix verification, and the token-efficiency comparison (Tasks C–E).
 
+
 ## Problem / Bug Description
 
-*(To be completed after investigation — see `obsidian/hot.md`.)*
+HTTPie Bug #3 occurs when the application is executed with both the `--session` and `--download` flags enabled.
+
+During download mode, HTTPie's download subsystem disables gzip compression by setting the request header:
+
+```text
+Accept-Encoding = None
+```
+
+This value propagates through the request pipeline and eventually reaches:
+
+```python
+Session.update_headers()
+```
+
+inside `httpie/sessions.py`.
+
+The method assumes that every header value is a valid byte string and executes:
+
+```python
+value.decode('utf8')
+```
+
+without verifying that the value is not `None`.
+
+As a result, the application crashes with:
+
+```text
+AttributeError: 'NoneType' object has no attribute 'decode'
+```
+
+The bug is triggered by a hidden dependency between the download subsystem (`downloads.py`) and the session persistence subsystem (`sessions.py`). The issue was identified through graph-guided navigation using Grphify and the Obsidian knowledge vault.
+
 
 ## Research Questions
 

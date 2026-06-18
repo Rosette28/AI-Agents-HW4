@@ -1,11 +1,8 @@
-import json
 from pathlib import Path
 
-import pytest
 
 from graphify_agent.services.naive_baseline import (
     _collect_files,
-    _has_root_cause,
     run_naive_baseline,
 )
 

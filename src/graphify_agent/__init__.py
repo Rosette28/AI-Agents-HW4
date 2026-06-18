@@ -34,7 +34,7 @@ def main() -> None:
             result = run_workflow()
             out = PROJECT_ROOT / "reports" / "graph_guided_run.json"
             out.write_text(json.dumps(result, indent=2), encoding="utf-8")
-            print(f"Wrote reports/graph_guided_run.json")
+            print("Wrote reports/graph_guided_run.json")
     elif len(sys.argv) > 1 and sys.argv[1] == "compare":
         from graphify_agent.services.compare import run_compare
         out = run_compare()
