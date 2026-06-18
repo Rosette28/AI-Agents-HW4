@@ -166,7 +166,16 @@ as the most relevant components for Bug #3 and correctly reported the root cause
 
 ## Grphify & Obsidian Usage
 
-*(To be completed.)*
+Grphify was used to generate a structural graph of the HTTPie codebase. The generated graph contains modules, classes, functions, imports, definitions, and call relationships.
+
+The graph was imported into an Obsidian vault and organized into several knowledge pages:
+
+* `index.md` – overall system map
+* `hot.md` – bug investigation hub
+* component pages – one page per important module
+
+The Obsidian vault served as an intermediate knowledge layer between the raw source code and the AI agent. Instead of reading the entire repository, the agent first navigated through the graph and vault pages, reducing context size and improving investigation efficiency.
+
 
 ## Reverse Engineering Process
 
@@ -318,10 +327,61 @@ The graph-guided agent used **~2.5× fewer tokens** and found the root cause in 
 while the naive baseline exhausted all 5 iterations without identifying `Session.update_headers`
 as the culprit. See `reports/token_comparison.md` for the full interpretation.
 
+
 ## Original Extensions
 
-*(To be completed.)*
+The project includes several extensions beyond the minimum assignment requirements:
+
+### Extension A – Knowledge-Driven Investigation
+
+The agent uses the Obsidian vault as an intermediate knowledge layer before reading source code.
+
+### Extension B – Centrality-Based Suspect Ranking
+
+Investigation targets are prioritized according to graph connectivity and architectural importance.
+
+### Extension C – Multi-Stage Investigation Pipeline
+
+The workflow separates navigation, ranking, reading, and explanation into distinct stages.
+
+### Extension D – Impact Analysis
+
+An impact assessment was performed for the fixed function `Session.update_headers()`.
+
+### Extension E – Additional Success Metric
+
+Beyond token savings, the workflow tracks whether the root cause was successfully identified.
+
 
 ## Run Instructions
 
-*(To be completed.)*
+### Install dependencies
+
+```bash
+uv sync
+```
+
+### Generate graph
+
+```bash
+uv run python -m graphify_agent.sdk
+```
+
+### Run graph-guided workflow
+
+```bash
+uv run python -m graphify_agent.run_agent
+```
+
+### Run tests
+
+```bash
+uv run pytest
+```
+
+### Run linting
+
+```bash
+uv run ruff check .
+```
+
